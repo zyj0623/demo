@@ -1,10 +1,10 @@
 #https://github.com/marketplace/actions/github-tag-bump
 name: Add Tag
 on:
-  pull_request:
+  push:
     branches:
       - master
-    types: [closed]
+    #types: [closed]
   workflow_dispatch:
 jobs:
   build:
